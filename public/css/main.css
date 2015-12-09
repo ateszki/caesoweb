@@ -326,7 +326,7 @@ ul.nostyle i {
 #features .media.service-box:first-child {
   margin-top: 80px;
 }
-#services {
+#integrantes {
   padding: 100px 0 75px;
 }
 .media.service-box {
@@ -534,7 +534,7 @@ ul.nostyle i {
 #testimonial .btns {
   margin-top: 10px;
 }
-#about {
+#caeso {
   padding: 100px 0;
 }
 #work-process {
@@ -575,7 +575,7 @@ ul.nostyle i {
 #work-process h3 {
   margin-bottom: 50px;
 }
-#meet-team {
+#autoridades {
   padding: 100px 0;
 }
 #meet-team .team-member {
@@ -772,15 +772,15 @@ ul.nostyle i {
 #pricing ul.pricing.featured li.plan-header .plan-name {
   color: #fff;
 }
-#get-in-touch {
+#contacto {
   padding: 100px 0 50px;
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   color: #fff;
 }
-#get-in-touch h1,
-#get-in-touch h2 {
+#contacto h1,
+#contacto h2 {
   color: #fff;
 }
 #blog {
