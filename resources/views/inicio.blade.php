@@ -7,23 +7,23 @@
     <meta name="author" content="">
     <title>CAESO | Cámara Argentina de Empresas de Servicios Odontológicos</title>
 	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.transitions.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="{{URL::to('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/owl.transitions.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/main.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/responsive.css')}}" rel="stylesheet">
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{URL::to('js/html5shiv.js')}}"></script>
+    <script src="{{URL::to('js/respond.min.js')}}"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="{{URL::to('images/ico/favicon.ico')}}?v=2">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{URL::to('images/ico/apple-touch-icon-144-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{URL::to('images/ico/apple-touch-icon-114-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{URL::to('images/ico/apple-touch-icon-72-precomposed.png')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{URL::to('images/ico/apple-touch-icon-57-precomposed.png')}}">
 </head><!--/head-->
 
 <body id="home" class="homepage">
@@ -38,16 +38,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/caeso-marca.png" alt="CAESO"></a>
+                    <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('images/caeso-marca.pn')}}g" alt="CAESO"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">Inicio</a></li>
-                        <li class="scroll"><a href="#about">Caeso</a></li>
-                        <li class="scroll"><a href="#services">Integrantes</a></li>
-                        <li class="scroll"><a href="#meet-team">Autoridades</a></li>
-                        <li class="scroll"><a href="#get-in-touch">Contacto</a></li>                        
+                        <li class="scroll"><a href="#caeso">Caeso</a></li>
+                        <li class="scroll"><a href="#integrantes">Integrantes</a></li>
+                        <li class="scroll"><a href="#autoridades">Autoridades</a></li>
+                        <li class="scroll"><a href="#contacto">Contacto</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -56,7 +56,7 @@
 
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url(images/slider/home-slider1.png);">
+            <div class="item" style="background-image: url({{URL::to('images/slider/home-slider1.png')}});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url(images/slider/home-slider2.png);">
+             <div class="item" style="background-image: url({{URL::to('images/slider/home-slider2.png')}});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -89,7 +89,7 @@
     </section><!--/#main-slider-->
 
     <!--/#about-->
-    <section id="about">
+    <section id="caeso">
         <div class="container">
 
             <div class="section-header">
@@ -117,7 +117,7 @@
         </div>
     </section><!--/#about-->
 
-    <section id="services" >
+    <section id="integrantes" >
         <div class="container">
 
             <div class="section-header">
@@ -213,7 +213,7 @@
         </div><!--/.container-->
     </section><!--/#services-->
 
-    <section id="meet-team">
+    <section id="autoridades">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Autoridades</h2>
@@ -267,7 +267,7 @@
 
   
 
-    <section id="get-in-touch">
+    <section id="contacto">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Contacto</h2>
@@ -331,16 +331,16 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{URL::to('js/jquery.js')}}"></script>
+    <script src="{{URL::to('js/bootstrap.min.js')}}"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{URL::to('js/owl.carousel.min.js')}}"></script>
+    <script src="{{URL::to('js/mousescroll.js')}}"></script>
+    <script src="{{URL::to('js/smoothscroll.js')}}"></script>
+    <script src="{{URL::to('js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{URL::to('js/jquery.isotope.min.js')}}"></script>
+    <script src="{{URL::to('js/jquery.inview.min.js')}}"></script>
+    <script src="{{URL::to('js/wow.min.js')}}"></script>
+    <script src="{{URL::to('js/main.js')}}"></script>
 </body>
 </html>
