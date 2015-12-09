@@ -19,7 +19,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="{{URL::to('images/ico/favicon.ico')}}?v=2">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -38,7 +38,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/caeso-marca.png" alt="CAESO"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -56,7 +56,7 @@
 
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url(images/slider/bg1.jpg);">
+            <div class="item" style="background-image: url(images/slider/home-slider1.png);">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url(images/slider/bg2.jpg);">
+             <div class="item" style="background-image: url(images/slider/home-slider2.png);">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -125,78 +125,89 @@
             </div>
 
             <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-line-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UX design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-alphaomega.png')}}" alt="Alpha Omega">
                         </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-cubes"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UI design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-apo.png')}}" alt="APO">
                         </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-pie-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SEO Services</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-consulmed.png')}}" alt="Consulmed">
                         </div>
-                    </div><!--/.col-md-4-->
-                
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">iOS App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-corden.png')}}" alt="Corden">
                         </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-language"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Android App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-dentalsystem.png')}}" alt="Dental System">
                         </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Win App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-mb.png')}}" alt="MB">
                         </div>
-                    </div><!--/.col-md-4-->
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-medicus.png')}}" alt="Medicus">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-odontopraxis.png')}}" alt="Odonto Praxis">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-opsa.png')}}" alt="OPSA">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-siaco.png')}}" alt="SIACO">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-socdus.png')}}" alt="SOCDUS">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-stleger.png')}}" alt="St. Leger">
+                        </div>
+                    </div>
                 </div>
             </div><!--/.row-->    
         </div><!--/.container-->
@@ -211,38 +222,29 @@
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
-                        </div>
                         <div class="team-info">
-                            <h3>Dr. Carlos Nápoli</h3>
+                            <h3>Dr.<br>Carlos Nápoli</h3>
                             <span>Presidente</span>
                         </div>
-                        <p>El Dr. Carlos H. Nápoli es director de OPSA</p>
+                        <p>OPSA</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
-                        </div>
                         <div class="team-info">
-                            <h3>Dr. Oscar Polignano</h3>
+                            <h3>Dr.<br>Oscar Polignano</h3>
                             <span>Vicepresidente</span>
                         </div>
-                        <p>El Dr. Oscar Polignano es presidente de SIACO</p>
+                        <p>SIACO</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
-                        </div>
                         <div class="team-info">
-                            <h3>Lic. Guillermo Nervi</h3>
+                            <h3>Lic.<br>Guillermo Nervi</h3>
                             <span>Secretario</span>
                         </div>
-                        <p>El Lic. Guillermo Nervi es presidente de Consulmed Servicios Odontológicos</p>
+                        <p>Consulmed Servicios Odontológicos</p>
                         
                     </div>
                 </div>
@@ -250,14 +252,11 @@
                 
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/04.jpg" alt="">
-                        </div>
                         <div class="team-info">
-                            <h3>Cdor. Ezequiel Basílico</h3>
+                            <h3>Cdor.<br>Ezequiel Basílico</h3>
                             <span>Tesorero</span>
                         </div>
-                        <p>El Cdor. Ezequiel Basílico es director en Dental System</p>
+                        <p>Dental System</p>
                     </div>
                 </div>
             </div>
