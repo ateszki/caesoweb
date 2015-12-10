@@ -58,12 +58,12 @@ hr {
 .section-header .section-title {
   font-size: 44px;
   color: #272727;
-  text-transform: uppercase;
   position: relative;
   padding-bottom: 20px;
   margin: 0 0 20px;
+  font-weight: 300;
 }
-.section-header .section-title:before {
+/*.section-header .section-title:before {
   content: "";
   position: absolute;
   width: 140px;
@@ -85,6 +85,7 @@ hr {
   border-radius: 20px;
   background: #45aed6;
 }
+*/
 .btn {
   border-width: 0;
   border-bottom-width: 3px;
@@ -104,6 +105,7 @@ hr {
   border-bottom: 1px solid #eee;
   margin-bottom: 15px;
   position: relative;
+  font-weight: 300;
 }
 .column-title:after {
   content: " ";
@@ -241,11 +243,10 @@ ul.nostyle i {
   margin-top: 180px;
   font-size: 36px;
   line-height: 1;
-  text-transform: uppercase;
   color: #fff;
 }
 #main-slider .slider-inner h2 > span {
-  color: #45aed6;
+  color: #93c6ce;
 }
 #main-slider .slider-inner .btn {
   margin-top: 10px;
@@ -328,6 +329,7 @@ ul.nostyle i {
 }
 #integrantes {
   padding: 100px 0 75px;
+  background-color: #eee;
 }
 .media.service-box {
   margin: 25px 0;
@@ -578,36 +580,43 @@ ul.nostyle i {
 #autoridades {
   padding: 100px 0;
 }
-#meet-team .team-member {
+#autoridades .team-member {
+  margin-top: 10px;
   padding: 13px;
   background: #eeeeee;
   border: 2px solid #eeeeee;
   transition: border-color 400ms;
   -webkit-transition: border-color 400ms;
 }
-#meet-team .team-member .team-img {
+#autoridades .team-member .team-img {
   margin: -15px -15px 0 -15px;
 }
-#meet-team .team-member .team-info {
+#autoridades .team-member .team-info {
   padding-bottom: 10px;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #45aed6;
   margin-bottom: 10px;
 }
-#meet-team .team-member:hover {
+#autoridades .team-member .team-info h3 {
+  font-weight: 300;
+}
+#autoridades .team-member p {
+  color: #45aed6;
+}
+#autoridades .team-member:hover {
   border-color: #45aed6;
 }
-#meet-team .team-member:hover .social-icons > li > a {
+#autoridades .team-member:hover .social-icons > li > a {
   background: #45aed6;
 }
-#meet-team .social-icons {
+#autoridades .social-icons {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-#meet-team .social-icons > li {
+#autoridades .social-icons > li {
   display: inline-block;
 }
-#meet-team .social-icons > li > a {
+#autoridades .social-icons > li > a {
   display: block;
   width: 32px;
   height: 32px;
@@ -773,7 +782,7 @@ ul.nostyle i {
   color: #fff;
 }
 #contacto {
-  padding: 100px 0 50px;
+  padding: 50px 0;
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);

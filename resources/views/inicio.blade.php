@@ -93,8 +93,8 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Caeso | Cámara Argentina de Empresas de Servicios Odontológicos</h2>
-                <p class="text-center wow fadeInDown">Se han nucleado en ella,  las empresas más importantes de la Argentina de Odontología y que atienden en conjunto a más de tres millones de beneficiarios del sistema de Salud, tanto de Obras Sociales como de la Medicina Prepaga.
+                <h2 class="section-title wow fadeInDown">Cámara Argentina de Empresas de Servicios Odontológicos</h2>
+                <p class="wow fadeInDown">Se han nucleado en la CAESO, las empresas más importantes de la Argentina de Odontología y que atienden en conjunto a más de tres millones de beneficiarios del sistema de Salud, tanto de Obras Sociales como de la Medicina Prepaga.
 
 </p>
             </div>
@@ -121,7 +121,7 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Empresas Integrantes</h2>
+                <h2 class="section-title wow fadeInDown">Empresas Integrantes</h2>
             </div>
 
             <div class="row">
@@ -216,7 +216,7 @@
     <section id="autoridades">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Autoridades</h2>
+                <h2 class="section-title wow fadeInDown">Autoridades</h2>
             </div>
 
             <div class="row">
@@ -244,19 +244,112 @@
                             <h3>Lic.<br>Guillermo Nervi</h3>
                             <span>Secretario</span>
                         </div>
-                        <p>Consulmed Servicios Odontológicos</p>
+                        <p>Consulmed</p>
                         
                     </div>
                 </div>
-                
+               <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-info">
+                            <h3>Dr.<br>Mario Alperin</h3>
+                            <span>Prosecretario</span>
+                        </div>
+                        <p>OPSA</p>
+                    </div>
+                </div>
+                 
                 
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Cdor.<br>Ezequiel Basílico</h3>
+                            <h3>Cont.<br>Ezequiel Basílico</h3>
                             <span>Tesorero</span>
                         </div>
                         <p>Dental System</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dr.<br>Antonio Cumini</h3>
+                            <span>Protesorero</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dra. María de las Mercedes Brachuli</h3>
+                            <span>Vocal Titular</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dr.<br>Rogelio Nuñez</h3>
+                            <span>Vocal Titular</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dra.<br>Elida Cosentino</h3>
+                            <span>Vocal Titular</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dr.<br>Daniel Klurfman</h3>
+                            <span>Vocal Suplente</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dra.<br>Claudia Tuozzo</h3>
+                            <span>Vocal Suplente</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Sra.<br>Ofelia García</h3>
+                            <span>Vocal Suplente</span>
+                        </div>
+                        <p>Dental System</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Cont.<br>Marcelo Swift</h3>
+                            <span>Revisor de Ctas. Titular</span>
+                        </div>
+                        <p>Consulmed</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Cont.<br>Marcelo De Stéfano</h3>
+                            <span>Revisor de Ctas. Suplente</span>
+                        </div>
+                        <p>Consulmed</p>
                     </div>
                 </div>
             </div>
@@ -269,10 +362,9 @@
 
     <section id="contacto">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Contacto</h2>
-                <p class="text-center wow fadeInDown">Complete el formulario para enviarnos un mensaje, le responderemos a la brevedad.</p>
-            </div>
+            <!--<div class="section-header">
+                <h2 class="section-title wow fadeInDown">Contacto</h2>
+            </div>-->
         </div>
     </section><!--/#get-in-touch-->
 
