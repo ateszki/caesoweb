@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/previa',function(){
-	return view('inicio');
+	$noticias = App\Noticia::where('habilitado','=',1)->get();
+	return view('inicio',["noticias"=>$noticias]);
 });
+Route::get('noticias/{slug}','NoticiasController@show');
+
+Route::get('noticias/{id}/imagen','NoticiasController@Imagen');

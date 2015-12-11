@@ -55,36 +55,24 @@
     </header><!--/header-->
 
     <section id="main-slider">
-        <div class="owl-carousel">
-            <div class="item" style="background-image: url({{URL::to('images/slider/home-slider1.png')}});">
+        <div @if(count($noticias)>1) class="owl-carousel" @endif>
+            @foreach($noticias as $noticia)
+            <div class="item" style="background-image: url({{URL::to('noticias'.'/'.$noticia->id.'/imagen')}});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>Caeso</span> es la Cámara Argentina de Empresas de Servicios Odontológicas</h2>
-                                    <p>Se han nucleado en ella,  las empresas más importantes de la Argentina de Odontología y que atienden en conjunto a más de tres millones de beneficiarios del sistema de Salud, tanto de Obras Sociales como de la Medicina Prepaga.</p>
-                                    <!--<a class="btn btn-primary btn-lg" href="#">Read More</a>-->
+                                    <h2>{!!$noticia->titulo!!}</h2>
+                                    <p>{{$noticia->bajada}}</p>
+                                    <a class="btn btn-primary btn-lg" href="{{URL::to('noticias').'/'.$noticia->slug}}">Seguir leyendo</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url({{URL::to('images/slider/home-slider2.png')}});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2>Se incorporó <span>Consultorio Dental</span> a Caeso</h2>
-                                    <p>Tenemos el agrado de anunciar la incorporación de Consultorio Dental a nuestra cámara. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
+            @endforeach
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
 
@@ -128,77 +116,77 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-alphaomega.png')}}" alt="Alpha Omega">
+                            <a href="http://www.alphaomega.com.ar" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-alphaomega.png')}}" alt="Alpha Omega"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-apo.png')}}" alt="APO">
+                            <a href="http://www.apo.com.ar" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-apo.png')}}" alt="APO"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-consulmed.png')}}" alt="Consulmed">
+                            <a href="http://www.consulmed.com.ar" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-consulmed.png')}}" alt="Consulmed"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-corden.png')}}" alt="Corden">
+                            <a href="http://www.corden.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-corden.png')}}" alt="Corden"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-dentalsystem.png')}}" alt="Dental System">
+                            <a href="http://www.dentalsystem.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-dentalsystem.png')}}" alt="Dental System"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-mb.png')}}" alt="MB">
+                            <a href="http://www.mbodontologia.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-mb.png')}}" alt="MB"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-medicus.png')}}" alt="Medicus">
+                            <a href="https://www.medicus.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-medicus.png')}}" alt="Medicus"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-odontopraxis.png')}}" alt="Odonto Praxis">
+                            <a href="http://test.odontopraxis.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-odontopraxis.png')}}" alt="Odonto Praxis">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-opsa.png')}}" alt="OPSA">
+                            <a href="http://www.opsa.com" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-opsa.png')}}" alt="OPSA"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-siaco.png')}}" alt="SIACO">
+                            <a href="http://www.siaco.com.ar" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-siaco.png')}}" alt="SIACO"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-socdus.png')}}" alt="SOCDUS">
+                            <a href="http://www.socdus.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-socdus.png')}}" alt="SOCDUS"></a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +242,7 @@
                             <h3>Dr.<br>Mario Alperin</h3>
                             <span>Prosecretario</span>
                         </div>
-                        <p>OPSA</p>
+                        <p>Alpha Omega</p>
                     </div>
                 </div>
                  
@@ -275,7 +263,7 @@
                             <h3>Dr.<br>Antonio Cumini</h3>
                             <span>Protesorero</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>Corden</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -284,7 +272,7 @@
                             <h3>Dra. María de las Mercedes Brachuli</h3>
                             <span>Vocal Titular</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>MB Odontología</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -293,7 +281,7 @@
                             <h3>Dr.<br>Rogelio Nuñez</h3>
                             <span>Vocal Titular</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>Medicus</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -302,7 +290,7 @@
                             <h3>Dra.<br>Elida Cosentino</h3>
                             <span>Vocal Titular</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>St Leger</p>
                     </div>
                 </div>
 
@@ -312,7 +300,7 @@
                             <h3>Dr.<br>Daniel Klurfman</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>APO</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -321,7 +309,7 @@
                             <h3>Dra.<br>Claudia Tuozzo</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>AMASIS</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -330,7 +318,7 @@
                             <h3>Sra.<br>Ofelia García</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>Dental System</p>
+                        <p>Socdus</p>
                     </div>
                 </div>
 
@@ -340,7 +328,7 @@
                             <h3>Cont.<br>Marcelo Swift</h3>
                             <span>Revisor de Ctas. Titular</span>
                         </div>
-                        <p>Consulmed</p>
+                        <p>Odontored</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -370,7 +358,7 @@
 
 
     <section id="contact">
-        <div id="google-map" style="height:650px" data-latitude="-34.60459" data-longitude="-58.37102"></div>
+        <div id="google-map" style="height:650px" data-latitude="-34.599048" data-longitude="-58.378881"></div>
         <div class="container-wrapper">
             <div class="container">
                 <div class="row">
@@ -380,9 +368,9 @@
 
                             <address>
                               <strong>Caeso</strong><br>
-                              25 de Mayo 267<br>
-                              Ciudad Autónoma de Buenos Aires, C1111AAL<br>
-                              <abbr title="Phone">T:</abbr> (011) 52178800
+                              Av.Córdoba 836 Piso 1<br>
+                              Ciudad Autónoma de Buenos Aires, C1054AAU<br>
+                              <!--<abbr title="Phone">T:</abbr> (011) 52178800-->
                             </address>
 
                             <form id="main-contact-form" name="contact-form" method="post" action="#">
@@ -407,21 +395,8 @@
         </div>
     </section><!--/#bottom-->
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2016 Caeso. 
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer><!--/#footer-->
+    @include('footer')
+
 
     <script src="{{URL::to('js/jquery.js')}}"></script>
     <script src="{{URL::to('js/bootstrap.min.js')}}"></script>
