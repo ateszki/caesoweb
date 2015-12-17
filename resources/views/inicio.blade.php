@@ -24,6 +24,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{URL::to('images/ico/apple-touch-icon-114-precomposed.png')}}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{URL::to('images/ico/apple-touch-icon-72-precomposed.png')}}">
     <link rel="apple-touch-icon-precomposed" href="{{URL::to('images/ico/apple-touch-icon-57-precomposed.png')}}">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head><!--/head-->
 
 <body id="home" class="homepage">
@@ -309,7 +311,7 @@
                             <h3>Dra.<br>Claudia Tuozzo</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>AMASIS</p>
+                        <p>Odontopraxis Americana</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -368,12 +370,21 @@
 
                             <address>
                               <strong>Caeso</strong><br>
-                              Av.Córdoba 836 Piso 1<br>
+                              Av.Córdoba 836 Piso 1 Of.106 <br>
                               Ciudad Autónoma de Buenos Aires, C1054AAU<br>
-                              <!--<abbr title="Phone">T:</abbr> (011) 52178800-->
+                              <abbr title="Phone">T:</abbr> (011) 43932836
                             </address>
+                           <!-- @if($errors->any())
+                            <div class=" alert alert-danger">{{$errors->first()}}</div>
+                            @endif
 
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            @if (session('exito'))
+                                <div class="alert alert-success">
+                                    {{ session('exito') }}
+                                </div>
+                            @else-->
+                            <form id="main-contact-form" name="contact-form" action="{{URL::to('contacto')}}" method="POST">
+                            {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 </div>
@@ -381,13 +392,14 @@
                                     <input type="email" name="email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
+                                    <input type="text" name="asunto" class="form-control" placeholder="Asunto" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
+                                    <textarea name="mensaje" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </form>
+                            @endif
                         </div>
                     </div>
                 </div>

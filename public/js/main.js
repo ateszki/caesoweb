@@ -1,5 +1,6 @@
 jQuery(function($) {'use strict';
 
+	
 	// Navigation Scroll
 	$(window).scroll(function(event) {
 		Scroll();
@@ -199,14 +200,26 @@ jQuery(function($) {'use strict';
 		var form_status = $('<div class="form_status"></div>');
 		$.ajax({
 			url: $(this).attr('action'),
-			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
-			}
+			method: 'POST',
+			headers: {
+	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	        },
+	        beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando mensaje...</p>').fadeIn() );
+			},
+			dataType: 'json',
+        	data: form.serialize(),
 		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			var estilo = (data.estado == 'exito')?"text-success":"text-danger";
+			form_status.html('<p class="'+estilo+'">'+data.mensaje+'</p>');
+			
+			if(estilo == 'text-success'){
+				form.trigger("reset");
+				$("button[type='submit']").prop('disabled', true);
+			}
 		});
 	});
-
+	
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false

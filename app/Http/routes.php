@@ -22,3 +22,20 @@ Route::get('/previa',function(){
 Route::get('noticias/{slug}','NoticiasController@show');
 
 Route::get('noticias/{id}/imagen','NoticiasController@Imagen');
+
+Route::post('contacto', function(){
+		$data = Input::all();
+		$mail = Mail::send('contacto', ["data"=>$data], function ($message) use($data) {
+		    $message->from('info@caeso.com.ar', 'Caeso');
+		    $message->to('ateszki@gmail.com');
+		    $message->subject("Nuevo contacto desde Web Caeso");
+		    $message->replyTo($data["email"], $data["name"]);
+		});
+		if($mail){
+			return response()->json(["estado"=>"exito","mensaje"=>"Gracias por contactarse con nosotros, le responderemos a la brevedad"]);
+			//return redirect('/previa#contacto')->with("exito","Gracias por contactarse con nosotros, le responderemos a la brevedad");
+		} else {
+			return response()->json(["estado"=>"error","mensaje"=>"No se pudo envíar el mensaje, intente nuevamente"]);
+			//return back()->withErrors(['msg', 'No se pudo envíar el mensaje, intente nuevamente']);;
+		}
+});
