@@ -27,7 +27,7 @@ Route::post('contacto', function(){
 		$data = Input::all();
 		$mail = Mail::send('contacto', ["data"=>$data], function ($message) use($data) {
 		    $message->from('info@caeso.com.ar', 'Caeso');
-		    $message->to('ateszki@gmail.com');
+		    $message->to('info@caeso.com.ar');
 		    $message->subject("Nuevo contacto desde Web Caeso");
 		    $message->replyTo($data["email"], $data["name"]);
 		});
