@@ -84,9 +84,7 @@
 
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Cámara Argentina de Empresas de Servicios Odontológicos</h2>
-                <p class="wow fadeInDown">Se han nucleado en la CAESO, las empresas más importantes de la Argentina de Odontología y que atienden en conjunto a más de tres millones de beneficiarios del sistema de Salud, tanto de Obras Sociales como de la Medicina Prepaga.
-
-</p>
+                <p class="wow fadeInDown">Representa a las empresas más importantes de la Argentina que atienden en conjunto a más de tres millones de beneficiarios del Sistema de Salud, tanto de Obras Sociales como de la Medicina Prepaga.</p>
             </div>
 
             <div class="row">
@@ -196,6 +194,13 @@
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
                             <img class="img-responsive" src="{{URL::to('logos/integrantes-stleger.png')}}" alt="St. Leger">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-odontored.png')}}" alt="Odontored">
                         </div>
                     </div>
                 </div>
