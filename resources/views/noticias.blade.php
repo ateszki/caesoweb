@@ -62,36 +62,16 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-    <section id="main-slider">
-        <div>
-            <div class="item" style="background-image: url({{URL::to('noticias').'/'.$noticia->id.'/imagen'}});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2>{!!$noticia->titulo!!}</h2>
-                                    <p>{{$noticia->bajada}}</p>
-                                    <a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="caeso" data-size="normal">Tweet</a>
-                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                                    <!--<a class="btn btn-primary btn-lg" href="#">Read More</a>-->
-                                    <div class="fb-share-button" style="line-height:11px" data-href="{{Request::url()}}" data-layout="button"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-             
-        </div><!--/.owl-carousel-->
-    </section><!--/#main-slider-->
-
     <!--/#about-->
     <section id="noticia">
         <div class="container">
 
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">{!!$noticia->titulo!!}</h2>
+                <div class="fb-share-button" style="line-height:11px" data-href="{{Request::url()}}" data-layout="button"></div>
+                <a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="caeso" data-size="normal">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <p>{{$noticia->bajada}}</p>
                 {!!$noticia->texto!!}
             </div>
 
