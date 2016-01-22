@@ -10,12 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/previa',function(){
+*/
+Route::get('/',function(){
 	$noticias = App\Noticia::where('habilitado','=',1)->get();
 	return view('inicio',["noticias"=>$noticias]);
 });
