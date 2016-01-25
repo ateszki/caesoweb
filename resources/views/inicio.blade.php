@@ -276,7 +276,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dra. María de las Mercedes Brachuli</h3>
+                            <h3>Dra. María de las Mercedes Brauchli</h3>
                             <span>Vocal Titular</span>
                         </div>
                         <p>MB Odontología</p>
