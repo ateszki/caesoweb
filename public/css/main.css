@@ -915,6 +915,10 @@ ul.nostyle i {
 #contact .contact-form h3 {
   margin-top: 0;
 }
+#adhesion {
+  padding: 100px 0;
+  background-color: #eeeeee; 
+}
 /***********************
 ********* Footer ******
 ************************/

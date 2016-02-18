@@ -219,6 +219,34 @@ jQuery(function($) {'use strict';
 			}
 		});
 	});
+
+	// Adhesion form
+	var form1 = $('#main-adhesion-form');
+	form1.submit(function(event){
+		event.preventDefault();
+		var form_status = $('<div class="form_status"></div>');
+		$.ajax({
+			url: $(this).attr('action'),
+			method: 'POST',
+			headers: {
+	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	        },
+	        beforeSend: function(){
+				form1.append( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando solicitud de adhesión...</p>').fadeIn() );
+			},
+			dataType: 'json',
+        	data: form1.serialize(),
+		}).done(function(data){
+			var estilo = (data.estado == 'exito')?"text-success":"text-danger";
+			form_status.html('<p class="'+estilo+'">'+data.mensaje+'</p>');
+			
+			if(estilo == 'text-success'){
+				form1.trigger("reset");
+				$("button[type='submit']").prop('disabled', true);
+			}
+		});
+	});
+
 	
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({

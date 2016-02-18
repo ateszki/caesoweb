@@ -19,6 +19,12 @@ Route::get('/',function(){
 	$noticias = App\Noticia::where('habilitado','=',1)->get();
 	return view('inicio',["noticias"=>$noticias]);
 });
+
+Route::get('/test',function(){
+	$noticias = App\Noticia::where('habilitado','=',1)->get();
+	return view('inicio-test',["noticias"=>$noticias]);
+});
+
 Route::get('noticias/{slug}','NoticiasController@show');
 
 Route::get('noticias/{id}/imagen','NoticiasController@Imagen');
@@ -36,6 +42,22 @@ Route::post('contacto', function(){
 			//return redirect('/previa#contacto')->with("exito","Gracias por contactarse con nosotros, le responderemos a la brevedad");
 		} else {
 			return response()->json(["estado"=>"error","mensaje"=>"No se pudo envíar el mensaje, intente nuevamente"]);
+			//return back()->withErrors(['msg', 'No se pudo envíar el mensaje, intente nuevamente']);;
+		}
+});
+Route::post('adhesion', function(){
+		$data = Input::all();
+		$mail = Mail::send('adhesion', ["data"=>$data], function ($message) use($data) {
+		    $message->from('info@caeso.com.ar', 'Caeso');
+		    $message->to('info@caeso.com.ar');
+		    $message->subject("Nueva solicitud de adhesión desde Web Caeso");
+		    $message->replyTo($data["email"], $data["responsable"]);
+		});
+		if($mail){
+			return response()->json(["estado"=>"exito","mensaje"=>"Gracias por enviar su solicitud de adhesión, le responderemos a la brevedad"]);
+			//return redirect('/previa#contacto')->with("exito","Gracias por contactarse con nosotros, le responderemos a la brevedad");
+		} else {
+			return response()->json(["estado"=>"error","mensaje"=>"No se pudo envíar la solicitud, intente nuevamente"]);
 			//return back()->withErrors(['msg', 'No se pudo envíar el mensaje, intente nuevamente']);;
 		}
 });
