@@ -50,6 +50,7 @@
                         <li class="scroll"><a href="#integrantes">Integrantes</a></li>
                         <li class="scroll"><a href="#autoridades">Autoridades</a></li>
                         <li class="scroll"><a href="#contacto">Contacto</a></li>                        
+                        <li class="scroll"><a href="#adhesion">Adhesión</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->
