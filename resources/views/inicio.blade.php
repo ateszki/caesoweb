@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>CAESO | Cámara Argentina de Empresas de Servicios Odontológicos</title>
-	<!-- core CSS -->
+    <!-- core CSS -->
     <link href="{{URL::to('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{URL::to('css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{URL::to('css/animate.min.css')}}" rel="stylesheet">
@@ -42,7 +42,7 @@
                     </button>
                     <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('images/caeso-marca.pn')}}g" alt="CAESO"></a>
                 </div>
-				
+                
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">Inicio</a></li>
@@ -50,6 +50,7 @@
                         <li class="scroll"><a href="#integrantes">Integrantes</a></li>
                         <li class="scroll"><a href="#autoridades">Autoridades</a></li>
                         <li class="scroll"><a href="#contacto">Contacto</a></li>                        
+                        <li class="scroll"><a href="#adhesion">Adhesión</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -410,7 +411,56 @@
                 </div>
             </div>
         </div>
-    </section><!--/#bottom-->
+    </section>
+    <section id="adhesion">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Solicitud de adhesión a la cámara.</h2>
+            </div>
+
+            <div class="row">
+                        <div class="col-sm-12">
+                            <form id="main-adhesion-form" name="adhesion-form" action="{{URL::to('adhesion')}}" method="POST">
+                            {{ csrf_field() }}
+                                <div class="form-group">
+                                    <input type="text" name="razon_social" class="form-control" placeholder="Razón Social" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="IVA" class="form-control" placeholder="Categoría fiscal (R. Inscripto, Exento, etc)" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="cuit" class="form-control" placeholder="CUIT" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="responsable" class="form-control" placeholder="Nombre de la persona responsable" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="cargo" class="form-control" placeholder="Cargo o función" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="domicilio" class="form-control" placeholder="Domicilio" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="telefono" class="form-control" placeholder="Teléfono" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="web" class="form-control" placeholder="Sitio web" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="cantidad_sillones" class="form-control" placeholder="Cantidad de sillones" required>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/#bottom-->
 
     @include('footer')
 

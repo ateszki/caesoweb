@@ -20,10 +20,6 @@ Route::get('/',function(){
 	return view('inicio',["noticias"=>$noticias]);
 });
 
-Route::get('/test',function(){
-	$noticias = App\Noticia::where('habilitado','=',1)->get();
-	return view('inicio-test',["noticias"=>$noticias]);
-});
 
 Route::get('noticias/{slug}','NoticiasController@show');
 
