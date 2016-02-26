@@ -35,14 +35,13 @@ Route::post('contacto', function(){
 		});
 		if($mail){
 			return response()->json(["estado"=>"exito","mensaje"=>"Gracias por contactarse con nosotros, le responderemos a la brevedad"]);
-			//return redirect('/previa#contacto')->with("exito","Gracias por contactarse con nosotros, le responderemos a la brevedad");
 		} else {
 			return response()->json(["estado"=>"error","mensaje"=>"No se pudo envíar el mensaje, intente nuevamente"]);
-			//return back()->withErrors(['msg', 'No se pudo envíar el mensaje, intente nuevamente']);;
 		}
 });
 Route::post('adhesion', function(){
 		$data = Input::all();
+		$A = App\Adhesion::create($data);
 		$mail = Mail::send('adhesion', ["data"=>$data], function ($message) use($data) {
 		    $message->from('info@caeso.com.ar', 'Caeso');
 		    $message->to('info@caeso.com.ar');
@@ -51,9 +50,7 @@ Route::post('adhesion', function(){
 		});
 		if($mail){
 			return response()->json(["estado"=>"exito","mensaje"=>"Gracias por enviar su solicitud de adhesión, le responderemos a la brevedad"]);
-			//return redirect('/previa#contacto')->with("exito","Gracias por contactarse con nosotros, le responderemos a la brevedad");
 		} else {
 			return response()->json(["estado"=>"error","mensaje"=>"No se pudo envíar la solicitud, intente nuevamente"]);
-			//return back()->withErrors(['msg', 'No se pudo envíar el mensaje, intente nuevamente']);;
 		}
 });

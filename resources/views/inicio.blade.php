@@ -452,7 +452,9 @@
                                 <div class="form-group">
                                     <input type="text" name="cantidad_sillones" class="form-control" placeholder="Cantidad de sillones" required>
                                 </div>
-                                
+                                <div class="form-group">
+                                    <input type="text" name="recomendado_por" class="form-control" placeholder="Socio de CAESO que lo recomienda" required>
+                                </div>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </form>
                         </div>

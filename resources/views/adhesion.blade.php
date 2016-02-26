@@ -22,3 +22,6 @@
 <div>{{$data["web"]}}</div>
 <h2>Cantidad de sillones</h2>
 <div>{{$data["cantidad_sillones"]}}</div>
+
+<h2>Recomendado por</h2>
+<div>{{$data["recomendado_por"]}}</div>
