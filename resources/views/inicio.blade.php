@@ -166,7 +166,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <a href="http://test.odontopraxis.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-odontopraxis.png')}}" alt="Odonto Praxis">
+                            <a href="http://www.amasis.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-ceo.png')}}" alt="Amasis">
                         </div>
                     </div>
                 </div>
@@ -317,7 +317,7 @@
                             <h3>Dra.<br>Claudia Tuozzo</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>Odontopraxis Americana</p>
+                        <p>Amasis</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
