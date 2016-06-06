@@ -6,10 +6,10 @@
  */
 
 // Create admin model from User class with title and url alias
-Admin::model('\User')->title('Users')->as('users-alias-name')->denyCreating(function ()
+Admin::model(\App\User::class)->title('Users')->as('users-alias-name')->denyCreating(function ()
 {
 	// Deny creating on thursday
-	return date('w') == 4;
+	//return date('w') == 4;
 })->denyEditingAndDeleting(function ($instance)
 {
 	// deny editing and deleting rows when this is true
@@ -24,4 +24,5 @@ Admin::model('\User')->title('Users')->as('users-alias-name')->denyCreating(func
 	// Describing elements in create and editing forms
 	FormItem::text('name', 'Name');
 	FormItem::text('email', 'Email');
+	FormItem::password('password', 'Password');
 });

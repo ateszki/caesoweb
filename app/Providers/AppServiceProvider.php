@@ -5,6 +5,7 @@ namespace App\Providers;
 use File;
 use Storage;
 use App\Noticia;
+use App\User;
 use Request;
 use Illuminate\Support\ServiceProvider;
 
@@ -28,7 +29,11 @@ class AppServiceProvider extends ServiceProvider
                 $data = File::get($arch);
                 
             } 
-        });    
+        }); 
+        User::saving(function($user){
+            $user->password = bcrypt($user->password);
+        });
+            
     }
 
     /**

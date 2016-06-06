@@ -20,3 +20,4 @@ AdminRouter::get('/', function ()
     return redirect('admin/noticias');
 });
 Admin::menu(App\Noticia::class)->icon('fa-newspaper-o');
+Admin::menu(App\User::class)->icon('fa-user-o');
