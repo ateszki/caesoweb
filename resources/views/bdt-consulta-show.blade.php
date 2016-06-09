@@ -58,6 +58,7 @@
             <div class="row">
                         <div class="col-sm-12 well">
                             <h3>{{$cv->nomap}} </h3>
+                            <h6>Ingreso {{$cv->created_at->format('d/m/Y')}}</h6>
 			                <div class="col-sm-6">
                                 <div class="form-group"><label>Puesto:</label><div> {{$cv->puesto}}</div> </div> 
     					    	<div class="form-group"><label>Fecha Nac.:</label><div> {{$cv->fecha_nacimiento->format('d/m/Y')}}</div> </div> 

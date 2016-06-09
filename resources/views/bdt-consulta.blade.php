@@ -69,6 +69,7 @@
 							    		<th>Edad</th>
 							    		<th>Localidad</th>
 							    		<th>Provincia</th>
+                                        <th>Ingreso</th>
 							    		<th>&nbsp;</th>
 							    	</tr>
 							    </thead>
@@ -81,7 +82,8 @@
 							    	<td>{{$cv->edad}}</td>
 							    	<td>{{$cv->localidad}}</td>
 							    	<td>{{$cv->provincia}}</td>
-							    	<td><a class="btn btn-primary" href="{{URL::to('bolsa-de-trabajo/consulta/')."/".$cv->id}}">detalle</a></td>
+                                    <td>{{$cv->created_at->format('d/m/Y')}}</td>
+                                    <td><a class="btn btn-primary" href="{{URL::to('bolsa-de-trabajo/consulta/')."/".$cv->id}}">detalle</a></td>
 							    </tr>
 							    @endforeach
 							    </tbody>
