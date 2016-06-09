@@ -52,28 +52,30 @@
     <section id="adhesion">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Ingreso a la bolsa de trabajo en modo consulta.</h2>
+                <h2 class="section-title wow fadeInDown">Bolsa de Trabajo - Consultas</h2>
             </div>
 
             <div class="row">
-                        <div class="col-sm-12">
-			                <form method="POST" action="/auth/login">
-							    {!! csrf_field() !!}
-
-							    <div class="form-group">
-							        <label>Email</label>
-							        <input  class="form-control" type="email" name="email" value="{{ old('email') }}">
-							    </div>
-
-							    <div class="form-group">
-							        <label>Password</label>
-							        <input  class="form-control" type="password" name="password" id="password">
-							    </div>
-
-							    <div class="form-group">
-							        <button class="btn  btn-primary"" type="submit">Ingresar</button>
-							    </div>
-							</form>
+                        <div class="col-sm-12 well">
+                            <h3>{{$cv->nomap}} </h3>
+			                <div class="col-sm-6">
+                                <div class="form-group"><label>Puesto:</label><div> {{$cv->puesto}}</div> </div> 
+    					    	<div class="form-group"><label>Fecha Nac.:</label><div> {{$cv->fecha_nacimiento->format('d/m/Y')}}</div> </div> 
+    					    	<div class="form-group"><label>Edad:</label><div> {{$cv->edad}}</div> </div> 
+                                <div class="form-group"><label>DNI:</label><div> {{$cv->dni}}</div> </div> 
+                                <div class="form-group"><label>LinkeIn:</label><div> <a href="{{$cv->linkedin}}" target="_blank">{{$cv->linkedin}}</a></div> 
+                                </div>
+                                <div class="form-group"><label>CV Adjunto:</label><div> <a href="{{URL::to('curriculum/'.$cv->id.'/descargar')}}" target="_blank">Descargar/Ver</a></div> 
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group"><label>Domicilio:</label><div> {{$cv->domicilio}}</div> </div> 
+                                <div class="form-group"><label>Localidad:</label><div> {{$cv->localidad}}</div> </div> 
+    					    	<div class="form-group"><label>Provincia:</label><div> {{$cv->provincia}}</div> </div> 
+                                <div class="form-group"><label>e-mail:</label><div> <a href="mailto:{{$cv->email}}">{{$cv->email}}</a></div> </div> 
+                                <div class="form-group"><label>Teléfono:</label><div> {{$cv->telefono}}</div> </div> 
+                                <div class="form-group"><label>Celular:</label><div> {{$cv->celular}}</div> </div> 
+					       </div>
                         </div>
             </div>
         </div>

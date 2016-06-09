@@ -53,6 +53,8 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Bolsa de Trabajo - Consultas</h2>
+                <h4> Usuario de consulta: <b>{{Auth::user()->name}}</b> - <a href="{{URL::to('auth/logout')}}" >Salir de modo consulta</a></h4>
+                <div class="form-gorup"><form method="get"><input type="text" placeholder="Buscar por nombre o puesto o localidad, etc" name="term" value="{{$term}}" class="form-control"><button type="submit" class="btn btn-primary">Buscar</button></form></div>
             </div>
 
             <div class="row">
@@ -84,6 +86,7 @@
 							    @endforeach
 							    </tbody>
 							  </table>
+                              {!! $cvs->render() !!}
 							</div>
                         </div>
             </div>

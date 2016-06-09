@@ -13,7 +13,7 @@ Admin::model(\App\User::class)->title('Users')->as('users-alias-name')->denyCrea
 })->denyEditingAndDeleting(function ($instance)
 {
 	// deny editing and deleting rows when this is true
-	return ($instance->id <= 2) || ($instance->email == 'admin');
+	return  ($instance->email == 'admin');
 })->columns(function ()
 {
 	// Describing columns for table view

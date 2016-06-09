@@ -23,17 +23,12 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('auth/logout', 'Auth\AuthController@getLogout');
 });
-	Route::resource('bolsa-de-trabajo/consulta','BolsaDeTrabajoController',['only' => ['index', 'show']]);
 
 Route::get('/',function(){
 	$noticias = App\Noticia::where('habilitado','=',1)->get();
 	return view('inicio',["noticias"=>$noticias]);
 });
 
-Route::get('/test',function(){
-	$noticias = App\Noticia::where('habilitado','=',1)->get();
-	return view('inicio-test',["noticias"=>$noticias]);
-});
 
 Route::get('noticias/{slug}','NoticiasController@show');
 
@@ -78,6 +73,36 @@ Route::post('bolsa-de-trabajo',function(){
 	    Storage::put('curriculums/'.$cv->id.'.'.$arch->getClientOriginalExtension(),File::get($arch));
     }
     return view('bolsa',["mensaje"=>true]);
+});
+
+Route::group(['middleware' => 'auth'], function () {
+
+	Route::resource('bolsa-de-trabajo/consulta','BolsaDeTrabajoController',['only' => ['index', 'show']]);
+	Route::get('curriculum/{id}/descargar',function($id){
+			$cv = App\Curriculum::findOrFail($id);
+	        $mimetype = array( 
+	                'pdf'=>'application/pdf', 
+	                'doc'=>'Content-Type: application/msword', 
+	                'docx'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
+	                ); 
+	        $content = NULL;
+	        $mime = NULL;
+	        $nombre = NULL;
+	        foreach ($mimetype as $ext=>$type){
+	            if (Storage::has('curriculums/'.$cv->id.".".$ext)){
+	                $content = Storage::get('curriculums/'.$cv->id.".".$ext);
+	                $nombre = $cv->apellido."-".$cv->nombre.".".$ext;
+	                $mime = $type;
+	                break;
+	            }
+	        }
+	        if($content == NULL){
+	            abort(404);
+	        }
+
+	        return response($content)->header('Content-Type', $mime)->header('filename', $nombre);
+
+	});
 });
 
 Route::post('contacto', function(){

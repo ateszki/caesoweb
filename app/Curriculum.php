@@ -3,10 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use SleepingOwl\Models\SleepingOwlModel;
 use Storage;
 
 
-class Curriculum extends Model
+
+
+class Curriculum extends SleepingOwlModel
 {
     protected $table ="curricula";
 
@@ -49,5 +52,10 @@ class Curriculum extends Model
     }
     public function getNomapAttribute(){
         return $this->apellido.", ".$this->nombre;
+    }
+
+    public function scopeDefaultSort($query)
+    {
+        return $query->orderBy('created_at', 'desc');
     }
 }

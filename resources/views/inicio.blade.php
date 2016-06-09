@@ -50,7 +50,8 @@
                         <li class="scroll"><a href="#integrantes">Integrantes</a></li>
                         <li class="scroll"><a href="#autoridades">Autoridades</a></li>
                         <li class="scroll"><a href="#contacto">Contacto</a></li>                        
-                        <li class="scroll"><a href="#adhesion">Adhesión</a></li>                        
+                        <li class="scroll"><a href="#adhesion">Adhesión</a></li>  
+                        <li class="scroll"><a href="{{URL::to('bolsa-de-trabajo')}}">Bolsa de trabajo</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->

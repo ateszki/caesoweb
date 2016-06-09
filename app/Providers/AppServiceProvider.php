@@ -31,7 +31,10 @@ class AppServiceProvider extends ServiceProvider
             } 
         }); 
         User::saving(function($user){
-            $user->password = bcrypt($user->password);
+            if(Request::has('password')){
+                $user->password = bcrypt(Request::get('password'));
+            }
+            
         });
             
     }

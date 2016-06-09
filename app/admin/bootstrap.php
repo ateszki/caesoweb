@@ -31,3 +31,13 @@ FormItem::register('CustomImagenNoticia', function (\Eloquent $model)
   			}
   			return '<div class="form-group">'.$imghtml.'<label for="imagen">Imagen (1600px x 550px)</label><input class="form-control"  accept=".jpg,.png,.gif" type="file" name="imagen"></div>';
   		});
+FormItem::register('CustomCV', function (\Eloquent $model)
+  		{
+  			$archivo = $model->archivo();
+  			if($archivo){
+  				return '<div class="form-group"><a href="'.URL::to('curriculum')."/".$model->id."/descargar".'">Descargar CV adjunto</a></div>';
+  			} else {
+  				return '<div class="form-group">No hay CV adjunto</a></div>';
+  			}
+  			
+  		});

@@ -46,7 +46,7 @@
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll"><a href="{{URL::to('/')}}#home">Inicio</a></li>
+                        <li class="scroll"><a href="{{URL::to('/')}}">Inicio</a></li>
                         <li class="scroll"><a href="{{URL::to('/')}}#caeso">Caeso</a></li>
                         <li class="scroll"><a href="{{URL::to('/')}}#integrantes">Integrantes</a></li>
                         <li class="scroll"><a href="{{URL::to('/')}}#autoridades">Autoridades</a></li>
