@@ -55,7 +55,7 @@ class UserTableSeeder extends Seeder
                     'email' => $user[1],
                     'password' => bcrypt($pass),
                 ]);
-                Mail::send('auth.email-user', array('email' => $user[1],'clave'=>$pass), function($message)
+                Mail::send('auth.email-user', array('email' => $user[1],'clave'=>$pass), function($message) use ($user)
                 {
                     $message->to($user[1], $user[0])->subject('Accesoa  consulta de la bolsa de trabajod e Caeso');
                 });
