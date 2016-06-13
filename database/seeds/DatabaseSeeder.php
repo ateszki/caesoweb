@@ -24,7 +24,7 @@ class UserTableSeeder extends Seeder
 {
     public function run()
     {
-        /*$users = [
+        $users = [
             ["Carlos Nápoli", "cnapoli@opsa.com"], 
             ["Oscar Polignano", "opolignano@siaco.com.ar"], 
             ["Guillermo Nervi", "nervi@consulmed.com.ar"], 
@@ -42,11 +42,11 @@ class UserTableSeeder extends Seeder
             ["Roberto Basile", "robertobasile06@yahoo.com.ar"], 
             ["Martín Ranalli", "martinr@tcmaxonline.com"],
             ];
-            */
+            
 
-        $users = [
+        /*$users = [
             ["Andrés Teszkiewicz","andres.teszkiewicz@cardumen.com.ar"],
-        ];
+        ];*/
 
         foreach($users as $user){
             $pass = str_random(6);
@@ -57,7 +57,7 @@ class UserTableSeeder extends Seeder
                 ]);
                 Mail::send('auth.email-user', array('email' => $user[1],'clave'=>$pass), function($message) use ($user)
                 {
-                    $message->from('info@caeso.com.ar','Caeso')->to($user[1], $user[0])->subject('Accesoa  consulta de la bolsa de trabajod e Caeso');
+                    $message->from('info@caeso.com.ar','Caeso')->to($user[1], $user[0])->subject('Acceso a consulta de la bolsa de trabajo de Caeso');
                 });
         }
     }
