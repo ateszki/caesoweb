@@ -22,41 +22,44 @@ class DatabaseSeeder extends Seeder
 
 class UserTableSeeder extends Seeder
 {
-    /*$users = [
-        ["Carlos Nápoli", "cnapoli@opsa.com"], 
-        ["Oscar Polignano", "opolignano@siaco.com.ar"], 
-        ["Guillermo Nervi", "nervi@consulmed.com.ar"], 
-        ["Ezequiel Basilico", "ezequiel.basilico@dentalsystem.com.ar"], 
-        ["Mario Alperin", "marioalperin@gmail.com"], 
-        ["Antonio Cumini", "acumini211@gmail.com"], 
-        ["Rogelio Nuñez", "rogelio.nunez@medicus.com.ar"], 
-        ["Mery Brauchli", "mbrauchli@mbodontologia.com.ar"], 
-        ["Elida Cosentino", "administracion@st-leger.com"], 
-        ["Daniel Klurfan", "dek12@sion.com"], 
-        ["Claudia Tuozzo", "presidencia@amasis.com.ar"], 
-        ["Ofelia Garcia", "garciaofelia@hotmail.com"], 
-        ["Marcelo Shwiff", "mshwiff@fibertel.com.ar"], 
-        ["Marcelo Destefano", "mdestefano@consulmed.com.ar"], 
-        ["Roberto Basile", "robertobasile06@yahoo.com.ar"], 
-        ["Martín Ranalli", "martinr@tcmaxonline.com"],
+    public function run()
+    {
+        /*$users = [
+            ["Carlos Nápoli", "cnapoli@opsa.com"], 
+            ["Oscar Polignano", "opolignano@siaco.com.ar"], 
+            ["Guillermo Nervi", "nervi@consulmed.com.ar"], 
+            ["Ezequiel Basilico", "ezequiel.basilico@dentalsystem.com.ar"], 
+            ["Mario Alperin", "marioalperin@gmail.com"], 
+            ["Antonio Cumini", "acumini211@gmail.com"], 
+            ["Rogelio Nuñez", "rogelio.nunez@medicus.com.ar"], 
+            ["Mery Brauchli", "mbrauchli@mbodontologia.com.ar"], 
+            ["Elida Cosentino", "administracion@st-leger.com"], 
+            ["Daniel Klurfan", "dek12@sion.com"], 
+            ["Claudia Tuozzo", "presidencia@amasis.com.ar"], 
+            ["Ofelia Garcia", "garciaofelia@hotmail.com"], 
+            ["Marcelo Shwiff", "mshwiff@fibertel.com.ar"], 
+            ["Marcelo Destefano", "mdestefano@consulmed.com.ar"], 
+            ["Roberto Basile", "robertobasile06@yahoo.com.ar"], 
+            ["Martín Ranalli", "martinr@tcmaxonline.com"],
+            ];
+            */
+
+        $users = [
+            ["Andrés Teszkiewicz","andres.teszkiewicz@cardumen.com.ar"],
         ];
-        */
 
-    $users = [
-        ["Andrés Teszkiewicz","andres.teszkiewicz@cardumen.com.ar"],
-    ];
-
-    foreach($users as $user){
-        $pass = str_random(6);
-        DB::table('users')->insert([
-                'name' => $user[0],
-                'email' => $user[1],
-                'password' => bcrypt($pass),
-            ]);
-            Mail::send('auth.email-user', array('email' => $user[1],'clave'=>$pass), function($message)
-            {
-                $message->to($user[1], $user[0])->subject('Accesoa  consulta de la bolsa de trabajod e Caeso');
-            });
+        foreach($users as $user){
+            $pass = str_random(6);
+            DB::table('users')->insert([
+                    'name' => $user[0],
+                    'email' => $user[1],
+                    'password' => bcrypt($pass),
+                ]);
+                Mail::send('auth.email-user', array('email' => $user[1],'clave'=>$pass), function($message)
+                {
+                    $message->to($user[1], $user[0])->subject('Accesoa  consulta de la bolsa de trabajod e Caeso');
+                });
+        }
     }
 
 }
