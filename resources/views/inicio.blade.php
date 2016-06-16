@@ -206,6 +206,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-tcmax.png')}}" alt="TC Max">
+                        </div>
+                    </div>
+                </div>
             </div><!--/.row-->    
         </div><!--/.container-->
     </section><!--/#services-->
