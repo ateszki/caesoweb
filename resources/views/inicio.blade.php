@@ -313,7 +313,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dr.<br>Daniel Klurfman</h3>
+                            <h3>Dr.<br>Daniel Klurfan</h3>
                             <span>Vocal Suplente</span>
                         </div>
                         <p>APO</p>
