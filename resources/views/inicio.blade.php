@@ -216,14 +216,14 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <a href="http://www.cooldent.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-cooldent.png')}}" alt="TC Max"></a>
+                            <a href="http://www.cooldent.com.ar/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-cooldent.png')}}" alt="CoolDent"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <a href="#integrantes"><img class="img-responsive" src="{{URL::to('logos/integrantes-sposa.png')}}" alt="TC Max"></a>
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-sposa.png')}}" alt="SPO S.A.">
                         </div>
                     </div>
                 </div>
