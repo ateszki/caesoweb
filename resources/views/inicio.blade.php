@@ -220,6 +220,7 @@
                         </div>
                     </div>
                 </div>
+<!--
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
@@ -227,6 +228,7 @@
                         </div>
                     </div>
                 </div>
+-->
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
