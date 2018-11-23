@@ -115,6 +115,7 @@
             </div>
 
             <div class="row">
+                <!--
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
@@ -122,6 +123,7 @@
                         </div>
                     </div>
                 </div>
+            -->
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
@@ -220,15 +222,13 @@
                         </div>
                     </div>
                 </div>
-<!--
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-sposa.png')}}" alt="SPO S.A.">
+                            <img class="img-responsive" src="{{URL::to('logos/integrantes-swissmedical.png')}}" alt="Swiss Medical">
                         </div>
                     </div>
                 </div>
--->
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
@@ -276,16 +276,6 @@
                         
                     </div>
                 </div>
-               <div class="col-sm-6 col-md-3">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-info">
-                            <h3>Dr.<br>Mario Alperin</h3>
-                            <span>Prosecretario</span>
-                        </div>
-                        <p>Alpha Omega</p>
-                    </div>
-                </div>
-                 
                 
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
