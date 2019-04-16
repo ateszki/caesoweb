@@ -204,7 +204,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-odontored.png')}}" alt="Odontored">
+                            <a href="http://www.gruporoisa.com.ar/odontored.html" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-odontored.png')}}" alt="Odontored"></a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="{{URL::to('logos/integrantes-swissmedical.png')}}" alt="Swiss Medical">
+                            <a href="https://www.swissmedical.com.ar" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-swissmedical.png')}}" alt="Swiss Medical"></a>
                         </div>
                     </div>
                 </div>
