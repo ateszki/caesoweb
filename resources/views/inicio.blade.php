@@ -241,7 +241,7 @@
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
                             <a href="https://www.gmlsi.com" target="_blank">
-                                <img class="img-responsive" src="{{URL::to('logos/integrantes-klasmile.png')}}" alt="Grupo Médico Lomas de San Isidro"></a>
+                                <img class="img-responsive" src="{{URL::to('logos/integrantes-klasmile.png')}}" alt="Klasmile Odontología"></a>
                         </div>
                     </div>
                 </div>
