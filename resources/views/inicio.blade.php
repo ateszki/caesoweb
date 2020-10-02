@@ -58,6 +58,11 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
+    <section id="dia-odontologo">
+        <div class="container">
+            <img src="images/CAESO-diadelodontolgo.png" align="center">
+        </div>
+    </section>
     <section id="main-slider">
         <div @if(count($noticias)>1) class="owl-carousel" @endif>
             @foreach($noticias as $noticia)
