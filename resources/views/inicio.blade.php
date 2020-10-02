@@ -58,11 +58,9 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-    <section id="dia-odontologo">
-        <div class="container">
-            <img src="images/CAESO-diadelodontolgo.png" align="center">
+        <div id="dia-odontologo" onclick="$('#dia-odontologo').fadeOut('slow');" class="container" style="position:absolute;width:100%;background-color:white;z-index:100">
+            <img src="images/CAESO-diadelodontolgo.png" width="100%"  align="center">
         </div>
-    </section>
     <section id="main-slider">
         <div @if(count($noticias)>1) class="owl-carousel" @endif>
             @foreach($noticias as $noticia)
