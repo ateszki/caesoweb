@@ -305,7 +305,16 @@
                         
                     </div>
                 </div>
-                
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-info">
+                            <h3>Dra.<br>Claudia Tuozzo</h3>
+                            <span>Prosecretario</span>
+                        </div>
+                        <p>Amasis</p>
+                        
+                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
@@ -337,26 +346,27 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dr.<br>Rogelio Nuñez</h3>
-                            <span>Vocal Titular</span>
-                        </div>
-                        <p>Medicus</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-info">
                             <h3>Dra.<br>Elida Cosentino</h3>
                             <span>Vocal Titular</span>
                         </div>
                         <p>St Leger</p>
                     </div>
                 </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Sra.<br>Ofelia García</h3>
+                            <span>Vocal Titular</span>
+                        </div>
+                        <p>Socdus</p>
+                    </div>
+                </div>
+                
 
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dr.<br>Daniel Klurfan</h3>
+                            <h3>Dr.<br>Mariano Villariño</h3>
                             <span>Vocal Suplente</span>
                         </div>
                         <p>APO</p>
@@ -365,21 +375,13 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dra.<br>Claudia Tuozzo</h3>
+                            <h3>Dr.<br>Rogelio Nuñez</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>Amasis</p>
+                        <p>Medicus</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-info">
-                            <h3>Sra.<br>Ofelia García</h3>
-                            <span>Vocal Suplente</span>
-                        </div>
-                        <p>Socdus</p>
-                    </div>
-                </div>
+                
 
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
@@ -396,7 +398,7 @@
                             <h3>Cont.<br>Marcelo De Stéfano</h3>
                             <span>Revisor de Ctas. Suplente</span>
                         </div>
-                        <p>Consulmed</p>
+                        <p>Pampaz</p>
                     </div>
                 </div>
             </div>
