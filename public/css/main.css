@@ -168,13 +168,7 @@ ul.nostyle i {
   height: auto;
   padding: 22px 15px 21px;
 }
- #dia-odontologo {
-	top:90px;	
-  } 
-@media only screen and (min-width: 768px) {
- #dia-odontologo {
-	top:90px;	
-  } 
+ 
  #main-menu.navbar-default {
     background: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);

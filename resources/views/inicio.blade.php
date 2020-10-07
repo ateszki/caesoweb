@@ -58,9 +58,7 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-        <div id="dia-odontologo" onclick="$('#dia-odontologo').fadeOut('slow');" class="container" style="position:absolute;width:100%;background-color:white;z-index:100">
-            <img src="images/CAESO-diadelodontolgo.png" width="100%"  align="center">
-        </div>
+        
     <section id="main-slider">
         <div @if(count($noticias)>1) class="owl-carousel" @endif>
             @foreach($noticias as $noticia)
@@ -366,7 +364,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dr.<br>Mariano Villariño</h3>
+                            <h3>Dr.<br>Mariano Villarino</h3>
                             <span>Vocal Suplente</span>
                         </div>
                         <p>APO</p>
