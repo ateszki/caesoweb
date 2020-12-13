@@ -45,7 +45,9 @@ jQuery(function($) {'use strict';
 	 	$(this).closest('.panel-heading').toggleClass('active');
 	});
 
-	
+	$(document).ready(function() {
+		window.setTimeout(function(){$('#dia-odontologo').fadeOut('slow');},8000);
+	});	
 	//Slider
 	$(document).ready(function() {
 		var time = 7; // time in seconds
