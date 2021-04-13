@@ -410,21 +410,21 @@
 
   
 
-    <section id="contacto">
+    <!--section id="contacto">
         <div class="container">
-            <!--<div class="section-header">
+            <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Contacto</h2>
-            </div>-->
+            </div>
         </div>
-    </section><!--/#get-in-touch-->
+    </section--><!--/#get-in-touch-->
 
 
     <section id="contact">
-        <div id="map" style="height:650px;backgroud:url(/images/mapa_caeso.png) top center no-repeat"></div>
+        <div id="map" style="height:650px;background:url(http://www.caeso.com.ar/images/mapa_caeso.png) top center no-repeat;background-size:cover"></div>
         <div class="container-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-8">
+                    <div class="col-sm-4 col-sm-offset-1">
                         <div class="contact-form">
                             <h3>Información de contacto</h3>
 
