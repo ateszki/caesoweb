@@ -420,7 +420,7 @@
 
 
     <section id="contact">
-        <div id="google-map" style="height:650px" data-latitude="-34.599048" data-longitude="-58.378881"></div>
+        <div id="map" style="height:650px;backgroud:url(/images/mapa_caeso.png) top center no-repeat"></div>
         <div class="container-wrapper">
             <div class="container">
                 <div class="row">
@@ -523,7 +523,6 @@
 
     <script src="{{URL::to('js/jquery.js')}}"></script>
     <script src="{{URL::to('js/bootstrap.min.js')}}"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="{{URL::to('js/owl.carousel.min.js')}}"></script>
     <script src="{{URL::to('js/mousescroll.js')}}"></script>
     <script src="{{URL::to('js/smoothscroll.js')}}"></script>
