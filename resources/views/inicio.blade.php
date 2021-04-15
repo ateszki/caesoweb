@@ -410,13 +410,13 @@
 
   
 
-    <!--section id="contacto">
+    <section id="contacto">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Contacto</h2>
             </div>
         </div>
-    </section--><!--/#get-in-touch-->
+    </section><!--/#get-in-touch-->
 
 
     <section id="contact">
