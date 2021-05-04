@@ -208,13 +208,6 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <a href="http://www.gruporoisa.com.ar/odontored.html" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-odontored.png')}}" alt="Odontored"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="integrante wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-img">
                             <a href="http://www.tcmaxonline.com/" target="_blank"><img class="img-responsive" src="{{URL::to('logos/integrantes-tcmax.png')}}" alt="TC Max"></a>
                         </div>
                     </div>
