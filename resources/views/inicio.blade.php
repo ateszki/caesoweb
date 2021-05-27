@@ -377,7 +377,7 @@
                 </div>
                 
 
-                <div class="col-sm-6 col-md-3">
+                <!--<div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
                             <h3>Cont.<br>Marcelo Shwiff</h3>
@@ -385,12 +385,12 @@
                         </div>
                         <p>Odontored</p>
                     </div>
-                </div>
+                </div>-->
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
                             <h3>Cont.<br>Marcelo De Stéfano</h3>
-                            <span>Revisor de Ctas. Suplente</span>
+                            <span>Revisor de Ctas. Titular</span>
                         </div>
                         <p>Pampaz</p>
                     </div>
