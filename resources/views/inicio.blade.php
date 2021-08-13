@@ -306,7 +306,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-info">
-                            <h3>Dra.<br>Claudia Tuozzo</h3>
+                            <h3>Cont.<br>Claudia Tuozzo</h3>
                             <span>Prosecretario</span>
                         </div>
                         <p>Amasis</p>
@@ -336,15 +336,6 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dra. María de las Mercedes Brauchli</h3>
-                            <span>Vocal Titular</span>
-                        </div>
-                        <p>MB Odontología</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-info">
                             <h3>Dra.<br>Elida Cosentino</h3>
                             <span>Vocal Titular</span>
                         </div>
@@ -366,7 +357,7 @@
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
                             <h3>Dr.<br>Mariano Villarino</h3>
-                            <span>Vocal Suplente</span>
+                            <span>Vocal Titular</span>
                         </div>
                         <p>APO</p>
                     </div>
@@ -374,23 +365,22 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
-                            <h3>Dr.<br>Rogelio Nuñez</h3>
+                            <h3>Dr.<br>Edgardo González</h3>
                             <span>Vocal Suplente</span>
                         </div>
-                        <p>Medicus</p>
+                        <p>Efal Odontología</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Dr.<br>Gastón Miñones</h3>
+                            <span>Vocal Suplente</span>
+                        </div>
+                        <p>Cooldent</p>
                     </div>
                 </div>
                 
-
-                <!--<div class="col-sm-6 col-md-3">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-info">
-                            <h3>Cont.<br>Marcelo Shwiff</h3>
-                            <span>Revisor de Ctas. Titular</span>
-                        </div>
-                        <p>Odontored</p>
-                    </div>
-                </div>-->
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-info">
@@ -398,6 +388,15 @@
                             <span>Revisor de Ctas. Titular</span>
                         </div>
                         <p>Pampaz</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-info">
+                            <h3>Cont.<br>Maximiliano Leiva</h3>
+                            <span>Revisor de Ctas. Suplente</span>
+                        </div>
+                        <p>Swiss Medical</p>
                     </div>
                 </div>
             </div>
