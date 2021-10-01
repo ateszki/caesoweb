@@ -59,7 +59,7 @@
     </header><!--/header-->
 
    <div id="dia-odontologo" onclick="$('#dia-odontologo').fadeOut('slow');" class="container" style="position:absolute;width:100%;background-color:white;z-index:100">
-            <img src="images/CAESO-diadelodontolgo2021_saludo.png" width="100%"  align="center">
+            <img src="images/CAESO-diadelodontolgo2021_saludo.png" width="80%"  align="center">
         </div>
         
     <section id="main-slider">
