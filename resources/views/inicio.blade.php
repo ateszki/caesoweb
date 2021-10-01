@@ -58,9 +58,9 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-   <!--div id="dia-odontologo" onclick="$('#dia-odontologo').fadeOut('slow');" class="container" style="position:absolute;width:100%;background-color:white;z-index:100">
-            <img src="images/CAESO-Feliz2021_.png" width="100%"  align="center">
-        </div-->
+   <div id="dia-odontologo" onclick="$('#dia-odontologo').fadeOut('slow');" class="container" style="position:absolute;width:100%;background-color:white;z-index:100">
+            <img src="images/CAESO-díadelodontolgo2021_saludo.png" width="100%"  align="center">
+        </div>
         
     <section id="main-slider">
         <div @if(count($noticias)>1) class="owl-carousel" @endif>
